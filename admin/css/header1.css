@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: #2a3d4d;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #1e2e3b;
+}
+
+/* Username Display */
+.username {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .header {
+        font-size: 1.5em;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    form {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    form table td, form table th {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"],
+    form input[type="file"],
+    form select {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    form input[type="submit"] {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header {
+        font-size: 1.2em;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    form table td, form table th {
+        font-size: 0.8em;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"],
+    form input[type="file"],
+    form select {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+
+    form input[type="submit"] {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+}
+

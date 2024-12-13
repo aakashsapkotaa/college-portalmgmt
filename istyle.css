@@ -1,0 +1,53 @@
+  /* Custom Styles */
+        .titlebar {
+            background-color: #2a3d4d;
+            text-align: center;
+            padding: 30px;
+            margin-bottom: 50px;
+        }
+
+        .titlebar h1 {
+            color: white;
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+
+        .ab {
+            display: inline-block;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #fff;
+            background-color: #5c6bc0;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .ab:hover {
+            background-color: #3f4a93;
+            transform: scale(1.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .titlebar h1 {
+                font-size: 1.5rem;
+            }
+
+            .ab {
+                font-size: 1rem;
+                padding: 8px 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .titlebar h1 {
+                font-size: 1.2rem;
+            }
+
+            .ab {
+                font-size: 0.9rem;
+                padding: 6px 12px;
+            }
+        }

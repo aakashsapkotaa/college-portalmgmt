@@ -1,0 +1,129 @@
+/* Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Sky blue gradient */
+    color: #333;
+}
+
+.container {
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #004085;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+tr:hover {
+    background-color: #d1ecf1;
+    transform: scale(1.02);
+}
+
+/* Input Fields */
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    input[type="password"] {
+        padding: 8px;
+    }
+
+    input[type="submit"] {
+        font-size: 1em;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        font-size: 1.5em;
+    }
+
+    input[type="submit"] {
+        padding: 10px;
+    }
+}
